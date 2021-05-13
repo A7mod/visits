@@ -1,6 +1,10 @@
 const express =  require('express');
 const redis = require('redis');
 
+//trying to make sure everytime someone visits our 'webpage'
+//so we are adding errors and will try n figure out how to handle it with 
+//docker compose
+
 const app = express();
 const client = redis.createClient({
     host: 'redis-server',
