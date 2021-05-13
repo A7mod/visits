@@ -3,6 +3,7 @@ services:
     redis-server:
         image: 'redis'
     node-app:
+        restart: always      #this is a restart policy, I'll explain
         build: .
         ports:
             - "4001:8081"    
