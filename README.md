@@ -7,3 +7,13 @@ Skipping the head hurting and troublesome technique of follwing long haul docker
 they're supposed to run in unison for us to be able to access the aformentioned localhost, we use docker-compose.. 
 
 This has helped wonders and yes, guessed it right, its used to start uo multiple docker containers at the same time.
+
+
+The whole idea was to understand how docker compose is going to handle errors and what are the possible options available to avert those errors.
+
+There's Restart Policies :
+1. "on"
+2. always
+3. on-failure
+4. unless-stopped
+
