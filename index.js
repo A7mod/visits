@@ -5,6 +5,8 @@ const redis = require('redis');
 //so we are adding errors and will try n figure out how to handle it with 
 //docker compose
 
+const process = require('process');   //adding this to create a process
+
 const app = express();
 const client = redis.createClient({
     host: 'redis-server',
@@ -13,6 +15,7 @@ const client = redis.createClient({
 client.set('visits', 0);
 
 app.get('/', (req, res) => {
+    process.exit(0);           // wait will explain 
     client.get('visits', (err, visits) => {
         res.send('Number of visits is ' + visits);
         client.set('visits', parseInt(visits) + 1);
