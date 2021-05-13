@@ -17,3 +17,7 @@ There's Restart Policies :
 3. on-failure
 4. unless-stopped
 
+Apparently, this is where the project ended (cry face emoji). And we've kinda f*-ed up the project. 
+So, when using ultimately, we have to remove that exit status tho.
+
+LOL
